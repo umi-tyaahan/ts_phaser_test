@@ -1,0 +1,19 @@
+{
+  "name": "ts_phaser_base",
+  "version": "1.0.0",
+  "main": "game.ts",
+  "repository": "",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "start": "webpack-dev-server --mode=development"
+  },
+  "dependencies": {
+    "ts-loader": "^8.0.8",
+    "typescript": "^4.0.5",
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.0"
+  }
+}
