@@ -1,7 +1,7 @@
 ---
-name: Flame
+name: Flower Plasma2
 type: fragment
-author: XT95 https://www.shadertoy.com/view/MdX3zr
+author: epsilum (https://www.shadertoy.com/view/Xdf3zH)
 ---
 
 precision highp float;
