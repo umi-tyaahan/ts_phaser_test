@@ -14,7 +14,9 @@ export default class LoadingScene extends Phaser.Scene {
     const currentLoadingText = this.add.text(10, 10, loadingText(0));
 
     //glslロード
-    this.load.glsl('fire', './assets/fire.glsl.js');
+    this.load.glsl('fire', './assets/fire.glsl.js', 'fragment', {
+      responseType: 'text',
+    });
 
     //ファイルのロードをしていく
     this.load.image('acorn', './assets/food_byanbyanmen_s.png');
