@@ -1,15 +1,26 @@
 {
   "name": "ts_phaser_base",
   "version": "1.0.0",
-  "main": "game.ts",
+  "main": "src/game.ts",
   "repository": "",
   "author": "",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode=development",
-    "start": "webpack-dev-server --mode=development"
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development",
+    "start": "webpack-dev-server --mode=development --watch"
   },
   "dependencies": {
+    "phaser": "^3.24.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "@typescript-eslint/parser": "^4.6.1",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "expose-loader": "0.7.5",
+    "prettier": "^2.1.2",
     "ts-loader": "^8.0.8",
     "typescript": "^4.0.5",
     "webpack": "4.44.1",
