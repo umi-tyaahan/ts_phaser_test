@@ -14,13 +14,13 @@ export default class LoadingScene extends Phaser.Scene {
     const currentLoadingText = this.add.text(10, 10, loadingText(0));
 
     //glslロード
-    this.load.glsl('fire', '../assets/fire.glsl.js');
+    this.load.glsl('fire', './assets/fire.glsl.js');
 
     //ファイルのロードをしていく
-    this.load.image('acorn', '../assets/food_byanbyanmen_s.png');
+    this.load.image('acorn', './assets/food_byanbyanmen_s.png');
     //疑似的に大量のアセットをロードするかのような動きをさせてる
     for (let index = 0; index < 100; index++) {
-      this.load.image('acorn' + index, '../assets/food_byanbyanmen_s.png');
+      this.load.image('acorn' + index, './assets/food_byanbyanmen_s.png');
     }
 
     //ロードに進捗があるたびに発生するイベント
