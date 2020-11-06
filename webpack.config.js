@@ -1,6 +1,7 @@
 const path = require('path');
 const pathToPhaser = path.join(__dirname, "/node_modules/phaser/");
 const phaser = path.join(pathToPhaser, "dist/phaser.js");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   //エントリポイント。依存関係整理の起点にするファイル。
@@ -20,6 +21,13 @@ module.exports = {
       { test: /phaser\.js$/, loader: 'expose-loader?Phaser' }
     ]
   },
+  plugins: [
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'src/assets/', to: 'assets/' }
+      ]
+    })
+  ],
   // モジュールとして扱いたいファイルの拡張子を指定する
   // 例えば「import Foo from './foo'」という記述に対して"foo.ts"という名前のファイルをモジュールとして探す
   // デフォルトは['.js', '.json']
