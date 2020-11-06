@@ -1,6 +1,8 @@
 Phaser + TypeScript + webpack 環境  
 windows virtualBox(ubuntu18_64) で動作
 
+build 結果は github pages 用に docs 以下にゲームを出力するような構成です。
+
 # demo
 
 https://umi-tyaahan.github.io/ts_phaser_test/
