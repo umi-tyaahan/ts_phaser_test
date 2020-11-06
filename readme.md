@@ -1,6 +1,10 @@
 Phaser + TypeScript + webpack 環境  
 windows virtualBox(ubuntu18_64) で動作
 
+# demo
+
+https://umi-tyaahan.github.io/ts_phaser_test/
+
 # fork from
 
 https://github.com/digitsensitive/phaser3-typescript
