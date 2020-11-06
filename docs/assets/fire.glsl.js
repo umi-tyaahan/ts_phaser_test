@@ -4,7 +4,7 @@ type: fragment
 author: epsilum (https://www.shadertoy.com/view/Xdf3zH)
 ---
 
-precision highp float;
+precision mediump float;
 
 uniform float time;
 uniform vec2 resolution;
