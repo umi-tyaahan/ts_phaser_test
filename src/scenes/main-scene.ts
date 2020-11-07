@@ -8,7 +8,7 @@ export default class MainScene extends Phaser.Scene {
   }
 
   create(): void {
-    this.add.shader('Plasma3', 0, 0, 800, 600).setOrigin(0);
+    this.add.shader('Flame', 0, 0, 800, 600).setOrigin(0);
 
     this.physics.world.gravity.y = 100;
     this.acorn = this.physics.add
