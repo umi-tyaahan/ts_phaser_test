@@ -1,6 +1,5 @@
 import 'phaser';
 
-//あとでコメントアウトを解除する
 import Scenes from './scenes/scenes';
 
 const config: Phaser.Types.Core.GameConfig = {

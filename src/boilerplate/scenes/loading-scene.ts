@@ -19,11 +19,14 @@ export default class LoadingScene extends Phaser.Scene {
     });
 
     //ファイルのロードをしていく
-    this.load.image('acorn', './assets/food_byanbyanmen_s.png');
+    this.load.image('imgobj', './assets/food_byanbyanmen_s.png');
+
+    this.load.image('red', './assets/particles/red.png');
+
     //疑似的に大量のアセットをロードするかのような動きをさせてる
-    for (let index = 0; index < 100; index++) {
-      this.load.image('acorn' + index, './assets/food_byanbyanmen_s.png');
-    }
+    // for (let index = 0; index < 100; index++) {
+    //   this.load.image('acorn' + index, './assets/food_byanbyanmen_s.png');
+    // }
 
     //ロードに進捗があるたびに発生するイベント
     this.load.on('progress', (progress: number) => {
