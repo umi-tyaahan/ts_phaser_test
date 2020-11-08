@@ -3,9 +3,13 @@ const pathToPhaser = path.join(__dirname, "/node_modules/phaser/");
 const phaser = path.join(pathToPhaser, "dist/phaser.js");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+// ビルド対象を変える場合はここを変更する
+const buildtarget = './src/boilerplate/';
+
 module.exports = {
-  //エントリポイント。依存関係整理の起点にするファイル。
-  entry: './src/game.ts',
+  // エントリポイント 依存関係整理の起点にするファイル
+  entry: buildtarget + 'game.ts',
+
   output: {
     // モジュールバンドルを行った結果を出力する場所やファイル名の指定
     // "__dirname"はこのファイルが存在するディレクトリを表すnode.jsで定義済みの定数
@@ -24,7 +28,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'src/assets/', to: 'assets/' }
+        { from: 'assets/', to: 'assets/', context: buildtarget }
       ]
     })
   ],
