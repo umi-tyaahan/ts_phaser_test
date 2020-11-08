@@ -5,8 +5,9 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // ビルド対象を変える場合はここを変更する
 //examples 
-const buildtarget = './src/boilerplate/';
+// const buildtarget = './src/boilerplate/';
 //const buildtarget = './src/games/*****/';
+const buildtarget = './src/games/tutorial/';
 
 module.exports = {
   // エントリポイント 依存関係整理の起点にするファイル
