@@ -1,7 +1,27 @@
 Phaser + TypeScript + webpack 環境  
-windows virtualBox(ubuntu18_64) で動作
+- wsl2 ( ubuntu ) 環境で動作
+- 自動ビルド + hotreload構成
+- サーバーはwebpack cli
 
-build 結果は github pages 用に docs 以下にゲームを出力するような構成です。
+~~windows virtualBox(ubuntu18_64) で動作~~  
+
+# setup and run development
+
+```sh
+git clone git@github.com:umi-tyaahan/ts_phaser_test.git
+cd ts_phaser_test
+yarn install
+yarn start
+```
+
+
+# Other build command
+
+```
+yarn build # productionビルド(source map なし)
+yarn gitbuild # githubでゲーム公開用 (docs以下にファイル出力)
+yarn dev # sourcemapありで出力
+```
 
 # demo
 
@@ -16,12 +36,3 @@ https://github.com/digitsensitive/phaser3-typescript
 pretter/ESLint 構成など  
 https://qiita.com/KUMANOPUXTU/items/a7c4f935f34fa55dd2aa
 
-webpack-dev-server 設定見直さないと変えないと動かないですよ
-
-# script
-
-- yarn script
-
-  - `yarn build` : prod ビルド
-  - `yarn dev` : dev ビルド
-  - `yarn start` : ライブビルド
