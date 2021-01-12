@@ -1,0 +1,1 @@
+{"type":"Path","x":0,"y":0,"autoClose":false,"curves":[{"type":"CubicBezierCurve","points":[450,150,450,50,600,50,600,150]},{"type":"CubicBezierCurve","points":[600,150,600,300,500,350,450,500]},{"type":"CubicBezierCurve","points":[450,500,487.5,500,562.5,500,600,500]}]}

@@ -6,13 +6,13 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config ./webpack/webpack.prod.js",
-    "gitbuild": "webpack --config ./webpack/webpack.git.js",
-    "dev": "webpack --config ./webpack/webpack.dev.js",
-    "start": "webpack-cli serve --config ./webpack/webpack.dev.js"
+    "build": "webpack --config ./webpack.prod.js",
+    "gitbuild": "webpack --config ./webpack.git.js",
+    "dev": "webpack --config ./webpack.dev.js",
+    "start": "webpack-cli serve --config ./webpack.dev.js"
   },
   "dependencies": {
-    "phaser": "^3.50.1",
+    "phaser": "^3.51.0",
     "webpack-merge": "^5.7.3"
   },
   "devDependencies": {
