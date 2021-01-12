@@ -7,10 +7,4 @@ module.exports = merge(common, {
   mode: 'production', // 本番モード
   // devtool: 'source-map'
 
-  output: {
-    // モジュールバンドルを行った結果を出力する場所やファイル名の指定
-    // "__dirname"はこのファイルが存在するディレクトリを表すnode.jsで定義済みの定数
-    path: path.join(__dirname, 'public'),
-    filename: 'js/bundle.js',
-  },
 })
