@@ -1,6 +1,4 @@
 const path = require('path');
-const pathToPhaser = path.resolve(__dirname, '../node_modules/phaser/');
-const phaser = path.join(pathToPhaser, 'dist/phaser.js');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // ビルド対象を変える場合はここを変更する
@@ -23,14 +21,6 @@ module.exports = {
     rules: [
       // 拡張子が.tsで終わるファイルに対して、TypeScriptコンパイラを適用する
       { test: /\.ts$/, use: 'ts-loader', exclude: '/node_modules/' },
-      // phaser-hogehoge.jsというファイルの内容はPhaserというグローバル変数に内容を突っ込む(expose-loader)
-      // {
-      //   test: /phaser\.js$/,
-      //   use: {
-      //     loader: 'expose-loader',
-      //     options: { exposes: ['phaser'] },
-      //   },
-      // },
     ],
   },
   plugins: [
@@ -43,10 +33,6 @@ module.exports = {
   // デフォルトは['.js', '.json']
   resolve: {
     extensions: ['.ts', '.js'],
-    // import "phaser"ってしたときに読み込みに行くやつを指定する
-    // alias: {
-    //   phaser: phaser,
-    // },
   },
 
   devServer: {
