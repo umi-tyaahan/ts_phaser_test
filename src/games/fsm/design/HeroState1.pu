@@ -1,0 +1,16 @@
+@startuml
+!include inc/settings.pu
+
+title Hero Action
+
+state Idle:
+state Move: 移動
+state Dash: ダッシュ
+state Swing: 剣を振る
+
+[*] --> Idle
+Idle --> Move: 入力\n上下左右
+Idle --> Dash: 入力\nshift
+Idle --> Swing: 入力\nスペース
+
+@enduml

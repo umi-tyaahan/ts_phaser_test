@@ -1,0 +1,5 @@
+skinparam {
+  DefaultFontName Source Han Code JP M
+  noteBackgroundColor #ffffcc
+  noteBorderColor #999999
+}

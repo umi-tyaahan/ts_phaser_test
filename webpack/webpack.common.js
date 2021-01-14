@@ -2,7 +2,7 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // ビルド対象を変える場合はここを変更する
-const target = 'flash';
+const target = 'fsm';
 // const target = '../boilerplate';
 // const target = 'sandbox';
 // const target = 'flash';

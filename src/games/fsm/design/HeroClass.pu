@@ -1,0 +1,61 @@
+@startuml
+!include inc/settings.pu
+
+title Hero Class
+
+Class Game{
+  -create()
+  -update()
+}
+
+Class Phaser.Physics.Arcade.Sprite
+
+class Hero{
+  -stateMachine
+  -direction
+  +step()
+}
+
+Class StateMachine{
+  -initialState
+  -possibleStates
+  -stateArgs
+  -currentState
+  +step()
+  +transition()
+}
+interface State {
+  -stateMachine
+  +enter()
+  +execute()
+}
+
+class Idle
+class Move
+class Dash
+class Swing
+
+Game -right-> Hero
+
+Hero -right-|> Phaser.Physics.Arcade.Sprite
+
+Hero --> StateMachine
+
+State <|.. Idle
+State <|.. Move
+State <|.. Dash
+State <|.. Swing
+
+StateMachine o-- State
+
+
+
+
+
+
+
+
+
+
+
+@enduml
